@@ -1,4 +1,6 @@
 Testing::Application.routes.draw do
+  get "admin/users/index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
