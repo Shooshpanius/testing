@@ -46,3 +46,4 @@ gem 'bootstrap-sass'
 gem 'ruby-prof'
 gem 'test-unit'
 
+gem "jquery-validation-rails"
