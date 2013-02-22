@@ -5,6 +5,9 @@ class LoginController < ApplicationController
   end
 
 
+  def srv_check_login
+    render text: "OK"
+  end
 
 
 

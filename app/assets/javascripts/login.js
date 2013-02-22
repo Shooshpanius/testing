@@ -15,8 +15,8 @@ $(document).ready(function($)
         submitHandler: function(form) {
             var queryString = $('#login_form').serialize();
             $.ajax({
-                url: URL_PREFIX+"srv_edit_test",
-                type: 'GET',
+                url: "/login/srv_check_login",
+                type: 'POST',
                 async : false,
                 data: queryString,
                 success: function(msg) {
