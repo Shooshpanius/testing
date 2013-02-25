@@ -4,7 +4,7 @@ class Admin::UsersController < ApplicationController
 
 
   def list
-
+    render "admin/menu"
 
   end
 
