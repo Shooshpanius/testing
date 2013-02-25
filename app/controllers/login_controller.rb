@@ -23,11 +23,17 @@ class LoginController < ApplicationController
       session[:is_login] = true
       render text: "OK2"
     end
-
-  def srv_srv_logout
-    cookies.delete(:remember_tocken)
-    self.current_user = nil
   end
+
+
+  def srv_logout
+    reset_session
+    render text: "OK2"
+  end
+
+
+
+
 
 
 
