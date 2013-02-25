@@ -24,8 +24,9 @@ class LoginController < ApplicationController
       render text: "OK2"
     end
 
-
-
+  def srv_srv_logout
+    cookies.delete(:remember_tocken)
+    self.current_user = nil
   end
 
 
