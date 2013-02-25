@@ -3,6 +3,6 @@ class Admin::SkillsController < ApplicationController
   before_filter :is_admin
 
   def list
-    render "admin/menu"
+    render 'admin/_menu'
   end
 end

@@ -3,7 +3,7 @@ Testing::Application.routes.draw do
   get "/login/"  => "login#index"
 
 
-  resources :users, :path => 'users/(:action)(.:format)'
+  #resources :users, :path => 'users/(:action)(.:format)'
 
   namespace :admin do
     resources :skills, :path => "/skills/(:action)(.:format)"
