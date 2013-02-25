@@ -9,6 +9,8 @@ class LoginController < ApplicationController
   end
 
 
+
+
   def srv_check_login
 
     user = Users.find_by_login(params[:login])
