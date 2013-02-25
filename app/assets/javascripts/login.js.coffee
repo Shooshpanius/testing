@@ -3,11 +3,11 @@ $(document).ready ($) ->
     rules:
       login:
         required: true
-        number: true
+
 
       password:
         required: true
-        number: true
+
 
     errorClass: "input_error"
     errorElement: "em"

@@ -2,6 +2,10 @@ class LoginController < ApplicationController
 
   def index
 
+    if session[:is_login]
+      redirect_to '/admin/skills/list'
+    end
+
   end
 
 
@@ -13,8 +17,9 @@ class LoginController < ApplicationController
       render text: "OK"
 
     else
+      session[:is_admin] = true
+      session[:is_login] = true
       render text: "OK2"
-
     end
 
 

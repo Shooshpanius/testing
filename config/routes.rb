@@ -1,6 +1,16 @@
 Testing::Application.routes.draw do
-  get "admin/users/index"
+
   get "/login/"  => "login#index"
+
+  namespace :admin do
+    resources :skills, :path => "/skills/(:action)(.:format)"
+    resources :users, :path => "/users/(:action)(.:format)"
+  end
+
+  #get 'admin/skills/list'
+
+  #get ":admin/skills"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -57,5 +67,5 @@ Testing::Application.routes.draw do
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-   match ':controller(/:action(/:id))(.:format)'
+  # match ':controller(/:action(/:id))(.:format)'
 end
